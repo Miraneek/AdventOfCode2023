@@ -1,10 +1,12 @@
+package day01;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
 public class day1 {
 
-    public static File file = new File("day1Input.txt");
+    public static File file = new File("input.txt");
     public static Scanner scanner;
     static {
         try {
