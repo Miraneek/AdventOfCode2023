@@ -9,6 +9,9 @@ public class day06 {
     //Tento kod funguje pro první i druhý ukol, jediné co jsem změnil kvůli druhému úkolu,
     //bylo změnil INT na LONG
 
+    //dodatečné otázky: Jakou největší vzdálenost jsme schopni urazit a o kolik
+    //tím překonáme rekordy?
+
     public static File file = new File("src/day06/input.txt");
     public static Scanner scanner;
 
@@ -26,6 +29,7 @@ public class day06 {
 
         int sum = 0;
         int output = 1;
+        long largestPossibleDistance = 0;
 
         for (int i = 0; i < 2; i++) {
             String line = scanner.nextLine();
@@ -40,8 +44,10 @@ public class day06 {
                 long potentialDistance = j * (raceTime - j);
                 if (potentialDistance > recordDistance) {
                     sum++;
+                    largestPossibleDistance = Math.max(largestPossibleDistance, potentialDistance);
                 }
             }
+            System.out.printf("For the %d. race the maximum possible distance is %d\n",i+1,largestPossibleDistance);
             output *= sum;
             sum = 0;
         }
