@@ -1,4 +1,4 @@
-# Advent of Code Projekty 
+# Advent of Code Projekty
 
 ![Advent of Code](https://img.shields.io/badge/Advent%20of%20Code-2023-red)
 ![Jazyk](https://img.shields.io/badge/Jazyk-Java-blue)
