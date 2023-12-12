@@ -22,8 +22,8 @@ public class day02 {
         String input2;
         int id;
         int sum = 0;
-        boolean gameLagit = true;
         while (scanner.hasNextLine()) {
+            boolean gameLagit = true;
             input2 = scanner.nextLine().replace("Game ", "").replace(": ", ";");
             input = input2.split(";");
             id = Integer.parseInt(input[0]);
@@ -33,21 +33,24 @@ public class day02 {
                 int blueCount = 0;
                 String[] game = input[i].split(", ");
                 for (int j = 0; j < game.length; j++) {
+                    game[j] = game[j].trim();
+                }
+                for (int j = 0; j < game.length; j++) {
                     turn = game[j].split(" ");
                     if (turn[1].equals("red")) {
-                        redCount += Integer.parseInt(turn[0]);
+                        redCount = Integer.parseInt(turn[0]);
                         if (redCount > 12) {
                             gameLagit = false;
                             break;
                         }
                     } else if (turn[1].equals("green")) {
-                        greenCount += Integer.parseInt(turn[0]);
+                        greenCount = Integer.parseInt(turn[0]);
                         if (greenCount > 13) {
                             gameLagit = false;
                             break;
                         }
                     } else if (turn[1].equals("blue")) {
-                        blueCount += Integer.parseInt(turn[0]);
+                        blueCount = Integer.parseInt(turn[0]);
                         if (blueCount > 14) {
                             gameLagit = false;
                             break;
@@ -61,7 +64,6 @@ public class day02 {
             if (gameLagit) {
                 sum += id;
             }
-            gameLagit = true;
         }
         System.out.println(sum);
     }
