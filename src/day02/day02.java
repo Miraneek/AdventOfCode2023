@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class day02 {
     public static File file = new File("src/day02/input.txt");
     public static Scanner scanner;
+
     static {
         try {
             scanner = new Scanner(file);
-        } catch (FileNotFoundException e)
-        {
+        } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
