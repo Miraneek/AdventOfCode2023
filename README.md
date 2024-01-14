@@ -1,18 +1,16 @@
-# Advent of Code Projekty
+# Advent of Code Projects
 
-![Advent of Code](https://img.shields.io/badge/Advent%20of%20Code-2023-red)
-![Jazyk](https://img.shields.io/badge/Jazyk-Java-blue)
+![Advent of Code](https://img.shields.io/badge/Advent%20of%20Code-2023-red)![Language](https://img.shields.io/badge/Jazyk-Java-blue)
+## Introduction
 
-## Úvod
+Welcome to my project repository for Advent of Code! This repository contains my solutions and implementations of Advent of Code challenges for 2023. Advent of Code is an annual programming event with daily challenges leading up to Christmas.
 
-Vítejte v mém úložišti projektů pro Advent of Code! Toto úložiště obsahuje mé řešení a implementace úkolů Advent of Code pro rok 2023. Advent of Code je každoroční programátorská událost s denními výzvami vedoucími k Vánocům.
+## Project Structure
 
-## Struktura Projektu
+The repository is organized as follows:
 
-Úložiště je organizováno následovně:
-
-- **`/dayXX`**: Každý den výzvy má svůj vlastní adresář.
-  - **`input.txt`**: Soubory s vstupy pro danou výzvu.
-  - **`dayXX.java`**: Soubory se zdrojovým kódem obsahujícími řešení.
+- **`/dayXX`**: Each challenge day has its own directory.
+  - **`input.txt`**: The input files for a given prompt.
+  - **`dayXX.java`**: Source code files containing the solution.
 
 [Advent of Code 2023](https://adventofcode.com/2023)
